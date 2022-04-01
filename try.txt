@@ -11,3 +11,20 @@ void main()
 	printf("the circumference is: %f\n", cir);
 	printf("the area is: %f\n", area);
 }
+//从键盘输入圆的半径，计算并显示圆的面积和周长 
+#include<iostream>
+using namespace std;
+#define pi 3.14159//定义符号常量;
+/*优点：①提高程序的可读性
+        ②便于修改 
+		注意：以#号开头，结尾不加分号;*/ 
+int main()
+{
+	double r,s,c;//定义 3个double型的三个变量; 
+	cin>>r;//用户输入半径r; 
+	s=pi*r*r;//计算圆的面积保存在 s中; 
+	c=2*pi*r;//计算圆的周长保存在c中 ;
+	cout<<"面积是:"<<s<<endl;//输出面积s,前面有注释,注释要用引号包含 
+	cout<<"周长是:"<<c<<endl;
+	return 0;
+}
