@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main()
+{
+	float r;
+	double cir, area;
+	const double pi = 3.1415926;
+	printf("please enter a numbers as radius:");
+	scanf("%f", &r);
+	cir = 2.0*pi*r;
+	area = pi * r*r;
+	printf("the circumference is: %f\n", cir);
+	printf("the area is: %f\n", area);
+}
